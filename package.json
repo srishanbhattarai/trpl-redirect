@@ -1,0 +1,17 @@
+{
+  "name": "trpl-redirect",
+  "version": "1.0.0",
+  "description": "Browser extension to redirect outdated links to The Rust Programming Language book to the right URLs",
+  "main": "build/index.js",
+  "repository": "https://github.com/srishanbhattarai/trpl-redirect",
+  "author": "Srishan Bhattarai <srishanbhattarai@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "typescript": "^3.3.1"
+  },
+  "devDependencies": {
+    "jest": "^24.0.0",
+    "ts-jest": "^23.10.5",
+    "ts-node": "^8.0.2"
+  }
+}
