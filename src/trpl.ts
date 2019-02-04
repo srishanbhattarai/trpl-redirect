@@ -25,6 +25,7 @@ export const findBestMatch = (needle: string, haystack: string[]) => {
     }
   }
 
+  // TODO: Improve the efficiency here.
   const diceCoeffcients = haystack.map(item => sorensenDiceCoefficient(needle, item))
   const maxDiceCoefficient = Math.max(...diceCoeffcients)
   const itemIdx = diceCoeffcients.findIndex(c => c === maxDiceCoefficient)
