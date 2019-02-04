@@ -13,3 +13,15 @@ So, for example, if you were on the page for Advanced Traits on the outdated boo
 
 # Installation
 For now, only manual installation is possible. Chrome and Firefox support is imminent.
+
+## Chrome
+1. Download a zip of this repository [here](https://github.com/srishanbhattarai/trpl-redirect/archive/master.zip)
+2. Go to the URL - `chrome://extensions` 
+3. Press `Load Unpacked Extension` and provide it the zip you downloaded.
+4. Profit
+
+## Firefox
+I'm not sure of the exact steps for manually installing a Firefox extension, but I've submitted a request to upload it as an add-on to the marketplace. It should be available shortly.
+
+# License
+MIT
