@@ -24,5 +24,8 @@ For now, only a manual installation is possible. Availability on the Chrome web 
 ## Firefox
 The extension can be downloaded as an [add-on](https://addons.mozilla.org/en-US/firefox/addon/trpl-redirect/).
 
+# Contributions & Issues
+Please file an issue if you find that there's a case that is not covered by this extension. Better yet, send in a pull request!
+
 # License
 MIT
