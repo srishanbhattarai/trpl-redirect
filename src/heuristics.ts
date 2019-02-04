@@ -4,7 +4,7 @@
  * @param {number} n - Value of "n". Example: n = 2 computes the bigrams.
  * @param {string} str - The string to compute the n-gram for.
  */
-export function ngrams(n: number, str: string): Set<string> {
+export const ngrams = (n: number, str: string): Set<string> => {
   const strlen = str.length
 
   // If "n" equals or exceeds the length of the string, then it is the only ngram.
@@ -37,7 +37,10 @@ export function ngrams(n: number, str: string): Set<string> {
  * @param {string} second
  * @returns {number}
  */
-export function sorensenDiceCoefficient(first: string, second: string): number {
+export const sorensenDiceCoefficient = (
+  first: string,
+  second: string
+): number => {
   const x = first.replace(/\s+/g, '')
   const y = second.replace(/\s+/g, '')
 
