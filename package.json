@@ -6,12 +6,15 @@
   "repository": "https://github.com/srishanbhattarai/trpl-redirect",
   "author": "Srishan Bhattarai <srishanbhattarai@gmail.com>",
   "license": "MIT",
-  "dependencies": {
-    "typescript": "^3.3.1"
+  "scripts": {
+    "test": "jest"
   },
   "devDependencies": {
-    "jest": "^24.0.0",
+    "@types/jest": "^23.3.13",
+    "@types/node": "^10.12.21",
+    "jest": "22.0.0",
     "ts-jest": "^23.10.5",
-    "ts-node": "^8.0.2"
+    "ts-node": "^8.0.2",
+    "typescript": "^3.3.1"
   }
 }

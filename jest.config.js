@@ -1,4 +1,5 @@
 module.exports = {
+  "testURL": "http://localhost/",
   "roots": [
     "<rootDir>/src"
   ],
@@ -13,5 +14,5 @@ module.exports = {
     "jsx",
     "json",
     "node"
-  ],
+  ]
 }
