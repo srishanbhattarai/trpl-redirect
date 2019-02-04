@@ -7,11 +7,13 @@
   "author": "Srishan Bhattarai <srishanbhattarai@gmail.com>",
   "license": "MIT",
   "scripts": {
+    "build": "tsc",
     "lint": "tslint --project tsconfig.json 'src/**/*.ts' 'src/*.ts'",
     "prettify": "prettier --write src/**/*.ts src/*.ts",
     "test": "jest"
   },
   "devDependencies": {
+    "@types/chrome": "^0.0.78",
     "@types/jest": "^23.3.13",
     "@types/node": "^10.12.21",
     "jest": "22.0.0",
