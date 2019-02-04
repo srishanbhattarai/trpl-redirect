@@ -7,10 +7,9 @@
 	"author": "Srishan Bhattarai",
 	"homepage_url": "https://github.com/srishanbhattarai/trpl-redirect",
 	"content_scripts": [{
-		"matches": ["https://doc.rust-lang.org/book/second-edition"],
+		"matches": ["https://doc.rust-lang.org/book/second-edition/*"],
 		"js": ["./build.js"],
 		"run_at": "document_end",
 		"all_frames": true
-	}],
-  "permissions": ["tabs"]
+	}]
 }

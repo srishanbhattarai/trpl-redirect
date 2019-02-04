@@ -1,20 +1,16 @@
 import { findClosestNewURL } from './trpl'
 
-/**
- * Get the current tab and replace the old TRPL URL with the new one.
- */
-chrome.tabs.getCurrent(tab => {
-  // May be undefined if called from a non-tab context
-  // (for example, a background page or popup view).
-  if (!tab) {
+(() => {
+  console.log('[TRPL]: LOADED!')
+
+  const source = window.location.href
+  const destination = findClosestNewURL(source)
+  console.log(`[TRPL]: Redirecting from ${source} to ${destination}`)
+
+  // If destination and source are same, nothing to do.
+  if (destination === source) {
     return
   }
 
-  // This property is only present if the extension's manifest
-  // includes the "tabs" permission.
-  if (!tab.url) {
-    return
-  }
-
-  window.location.replace(findClosestNewURL(tab.url))
-})
+  window.location.replace(destination)
+})()
