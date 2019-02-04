@@ -14,16 +14,15 @@ This extension takes the outdated book, and tries to find out what EXACT page in
 So, for example, if you were on the page for Advanced Traits on the outdated book, you would automatically be redirected to Advanced Traits on the new book.
 
 # Installation
-For now, only manual installation is possible. Chrome and Firefox support is imminent.
-
 ## Chrome
+For now, only a manual installation is possible. Availability on the Chrome web store is imminent.
 1. Download a zip of this repository [here](https://github.com/srishanbhattarai/trpl-redirect/archive/master.zip)
 2. Go to the URL - `chrome://extensions` 
 3. Press `Load Unpacked Extension` and provide it the zip you downloaded.
 4. Profit
 
 ## Firefox
-I'm not sure of the exact steps for manually installing a Firefox extension, but I've submitted a request to upload it as an add-on to the marketplace. It should be available shortly.
+The extension can be downloaded as an [add-on](https://addons.mozilla.org/en-US/firefox/addon/trpl-redirect/).
 
 # License
 MIT
