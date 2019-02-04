@@ -11,5 +11,8 @@
 		"js": ["./build.js"],
 		"run_at": "document_end",
 		"all_frames": true
-	}]
+	}],
+  "icons": {
+    "128": "rust.png"
+  }
 }
