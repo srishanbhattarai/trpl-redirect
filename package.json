@@ -7,8 +7,8 @@
   "author": "Srishan Bhattarai <srishanbhattarai@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "lint": "tslint --project tsconfig.json 'src/**/*.ts'",
-    "prettify": "prettier --write src/**/*.ts",
+    "lint": "tslint --project tsconfig.json 'src/**/*.ts' 'src/*.ts'",
+    "prettify": "prettier --write src/**/*.ts src/*.ts",
     "test": "jest"
   },
   "devDependencies": {

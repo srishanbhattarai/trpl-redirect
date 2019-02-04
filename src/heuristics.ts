@@ -5,25 +5,25 @@
  * @param {string} str - The string to compute the n-gram for.
  */
 export function ngrams(n: number, str: string): Set<string> {
-  const strlen = str.length;
+  const strlen = str.length
 
   // If "n" equals or exceeds the length of the string, then it is the only ngram.
   // Also, if "n" is negative, the input is spurious, return the string.
   if (n >= strlen || n < 0) {
-    return new Set<string>([str]);
+    return new Set<string>([str])
   }
 
-  const results = new Set<string>();
+  const results = new Set<string>()
 
-  let idx = 0;
+  let idx = 0
   while (idx < strlen - n + 1) {
-    const ngram = str.slice(idx, idx + n);
-    results.add(ngram);
+    const ngram = str.slice(idx, idx + n)
+    results.add(ngram)
 
-    idx += 1;
+    idx += 1
   }
 
-  return results;
+  return results
 }
 
 /**
@@ -38,15 +38,15 @@ export function ngrams(n: number, str: string): Set<string> {
  * @returns {number}
  */
 export function sorensenDiceCoefficient(first: string, second: string): number {
-  const x = first.replace(/\s+/g, "");
-  const y = second.replace(/\s+/g, "");
+  const x = first.replace(/\s+/g, '')
+  const y = second.replace(/\s+/g, '')
 
-  const xBigrams = ngrams(2, x);
-  const yBigrams = ngrams(2, y);
-  const tBigrams = new Set([...xBigrams].filter(entry => yBigrams.has(entry)));
+  const xBigrams = ngrams(2, x)
+  const yBigrams = ngrams(2, y)
+  const tBigrams = new Set([...xBigrams].filter(entry => yBigrams.has(entry)))
 
-  const num = 2 * tBigrams.size;
-  const denom = xBigrams.size + yBigrams.size;
+  const num = 2 * tBigrams.size
+  const denom = xBigrams.size + yBigrams.size
 
-  return num / denom;
+  return num / denom
 }
