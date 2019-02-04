@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`TRPL links should match snapshot 1`] = `
+exports[`secondEdition and latestEdition the links should match their snapshots 1`] = `
 Array [
   "SUMMARY.md",
   "appendix-00.md",
@@ -107,7 +107,7 @@ Array [
 ]
 `;
 
-exports[`TRPL links should match snapshot 2`] = `
+exports[`secondEdition and latestEdition the links should match their snapshots 2`] = `
 Array [
   "SUMMARY.md",
   "appendix-00.md",

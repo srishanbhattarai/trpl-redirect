@@ -1,4 +1,14 @@
 /**
+ * Remove elements from the list of TRPL links that will sway the heuristic
+ * algorithms unnecessarily.
+ *
+ * @param {string[]} links
+ * @returns {string[]}
+ */
+export const clean = (links: string[]): string[] =>
+  links.map(l => l.replace(/appendix-|ch\d\d-/g, ''))
+
+/**
  * All relative links that are available on the second edition of TRPL.
  *  (Ref. https://github.com/rust-lang/book/tree/master/2018-edition/src)
  */
