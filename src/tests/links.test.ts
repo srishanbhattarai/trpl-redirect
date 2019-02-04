@@ -1,4 +1,4 @@
-import { clean, latestEdition, secondEdition } from '../links'
+import { cleanAll, latestEdition, secondEdition } from '../links'
 
 describe('secondEdition and latestEdition', () => {
   it('the links should match their snapshots', () => {
@@ -25,6 +25,6 @@ describe('clean()', () => {
       '00-getting-started.md'
     ]
 
-    expect(clean(links)).toEqual(expected)
+    expect(cleanAll(links)).toEqual(expected)
   })
 })
