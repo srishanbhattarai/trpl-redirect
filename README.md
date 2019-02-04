@@ -1,6 +1,8 @@
 # trpl-redirect &middot; [![Build Status](https://travis-ci.com/srishanbhattarai/trpl-redirect.svg?token=r9ZKJZspyajhDz5EguyH&branch=master)](https://travis-ci.com/srishanbhattarai/trpl-redirect)
 > Browser extension to redirect outdated links to The Rust Programming Language book to the right URLs.
 
+![Image of TRPL Redirect](https://github.com/srishanbhattarai/trpl-redirect/blob/master/screenshot.png)
+
 # Background
 For a while now, links to the second edition of TRPL have shown a message saying that the link is outdated, and that you should refer to the new edition.
 However, there are two problems here:
