@@ -42,7 +42,7 @@ export const findBestMatch = (needle: string, haystack: string[]) => {
  * @param {string} oldURL - The full absolute URL to a page in the old book.
  * @returns {string}
  */
-export const newURL = (oldURL: string) => {
+export const findClosestNewURL = (oldURL: string) => {
   // If it's not an old link, nothing to do.
   if (oldURL.indexOf(oldBaseURL) === -1) {
     return oldURL
@@ -53,12 +53,6 @@ export const newURL = (oldURL: string) => {
   const entry = relativePath.split('/')[1]
 
   const entryClean = clean(entry)
-  const secondEditionClean = cleanAll(secondEdition)
-
-  const entryIndex = secondEditionClean.findIndex(item => item === entryClean)
-  if (entryIndex === -1) {
-    return oldURL
-  }
 
   const { matchIdx } = findBestMatch(entryClean, cleanAll(latestEdition))
 
