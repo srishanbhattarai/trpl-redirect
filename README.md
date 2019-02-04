@@ -15,14 +15,10 @@ So, for example, if you were on the page for Advanced Traits on the outdated boo
 
 # Installation
 ## Chrome
-For now, only a manual installation is possible. Availability on the Chrome web store is imminent.
-1. Download a zip of this repository [here](https://github.com/srishanbhattarai/trpl-redirect/archive/master.zip)
-2. Go to the URL - `chrome://extensions` 
-3. Press `Load Unpacked Extension` and provide it the zip you downloaded.
-4. Profit
+Download from the official Chrome [webstore](https://chrome.google.com/webstore/detail/trpl-redirect/inapnophinbgkgahciiakfmcejejfmpa).
 
 ## Firefox
-The extension can be downloaded as an [add-on](https://addons.mozilla.org/en-US/firefox/addon/trpl-redirect/).
+Downloaded from the official Firefox Add-On [marketplace](https://addons.mozilla.org/en-US/firefox/addon/trpl-redirect/).
 
 # Contributions & Issues
 Please file an issue if you find that there's a case that is not covered by this extension. Better yet, send in a pull request!
