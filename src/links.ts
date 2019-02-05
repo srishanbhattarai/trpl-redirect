@@ -13,7 +13,8 @@ export const cleanAll = (links: string[]): string[] => links.map(clean)
  * @param {string} link
  * @returns {string}
  */
-export const clean = (link: string): string => link.replace(/appendix-|ch\d\d-/g, '')
+export const clean = (link: string): string =>
+  link.replace(/appendix-|ch\d\d-/g, '')
 
 /**
  * All relative links that are available on the second edition of TRPL.

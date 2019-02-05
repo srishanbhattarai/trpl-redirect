@@ -1,6 +1,6 @@
 import { findClosestNewURL } from './trpl'
 
-(() => {
+;(() => {
   console.log('[TRPL]: LOADED!')
 
   const source = window.location.href
