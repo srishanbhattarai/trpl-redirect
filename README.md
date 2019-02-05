@@ -1,6 +1,8 @@
 # trpl-redirect &middot; [![Build Status](https://travis-ci.com/srishanbhattarai/trpl-redirect.svg?token=r9ZKJZspyajhDz5EguyH&branch=master)](https://travis-ci.com/srishanbhattarai/trpl-redirect)
 > Browser extension to redirect outdated links to The Rust Programming Language book to the right URLs.
 
+![Image of TRPL Redirect](https://github.com/srishanbhattarai/trpl-redirect/blob/master/screenshot.png)
+
 # Background
 For a while now, links to the second edition of TRPL have shown a message saying that the link is outdated, and that you should refer to the new edition.
 However, there are two problems here:
@@ -12,16 +14,14 @@ This extension takes the outdated book, and tries to find out what EXACT page in
 So, for example, if you were on the page for Advanced Traits on the outdated book, you would automatically be redirected to Advanced Traits on the new book.
 
 # Installation
-For now, only manual installation is possible. Chrome and Firefox support is imminent.
-
 ## Chrome
-1. Download a zip of this repository [here](https://github.com/srishanbhattarai/trpl-redirect/archive/master.zip)
-2. Go to the URL - `chrome://extensions` 
-3. Press `Load Unpacked Extension` and provide it the zip you downloaded.
-4. Profit
+Download from the official Chrome [webstore](https://chrome.google.com/webstore/detail/trpl-redirect/inapnophinbgkgahciiakfmcejejfmpa).
 
 ## Firefox
-I'm not sure of the exact steps for manually installing a Firefox extension, but I've submitted a request to upload it as an add-on to the marketplace. It should be available shortly.
+Downloaded from the official Firefox Add-On [marketplace](https://addons.mozilla.org/en-US/firefox/addon/trpl-redirect/).
+
+# Contributions & Issues
+Please file an issue if you find that there's a case that is not covered by this extension. Better yet, send in a pull request!
 
 # License
 MIT

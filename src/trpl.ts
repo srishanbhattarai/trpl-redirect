@@ -55,9 +55,8 @@ export const findClosestNewURL = (oldURL: string) => {
   const relativePath = oldURL.split(oldBaseURL)[1]
   const entry = relativePath.split('/')[1]
 
-  const entryClean = clean(entry)
-
-  const { matchIdx } = findBestMatch(entryClean, cleanAll(latestEdition))
+  // Find the index of the best match in the latestEdition, and return the link to it.
+  const { matchIdx } = findBestMatch(clean(entry), cleanAll(latestEdition))
 
   return `${newBaseURL}/${latestEdition[matchIdx]}`
 }
