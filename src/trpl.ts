@@ -20,20 +20,22 @@ export const findBestMatch = (needle: string, haystack: string[]) => {
   if (perfectMatchIdx !== -1) {
     return {
       match: haystack[perfectMatchIdx],
-      matchIdx: perfectMatchIdx,
-      score: -1
+      matchIdx: perfectMatchIdx
     }
   }
 
-  // TODO: Improve the efficiency here.
-  const diceCoeffcients = haystack.map(item => sorensenDiceCoefficient(needle, item))
-  const maxDiceCoefficient = Math.max(...diceCoeffcients)
-  const itemIdx = diceCoeffcients.findIndex(c => c === maxDiceCoefficient)
+  // 2. Find the item with the highest Sorenson Dice coefficient to the needle.
+  const bestMatch = haystack.reduce((x, y) => {
+    const xCoefficient = sorensenDiceCoefficient(needle, x)
+    const yCoefficient = sorensenDiceCoefficient(needle, y)
+
+    return Math.max(xCoefficient, yCoefficient) === xCoefficient ? x : y
+  })
+  const bestMatchIdx = haystack.findIndex(item => item === bestMatch)
 
   return {
-    match: haystack[itemIdx],
-    matchIdx: itemIdx,
-    score: maxDiceCoefficient
+    match: bestMatch,
+    matchIdx: bestMatchIdx
   }
 }
 
