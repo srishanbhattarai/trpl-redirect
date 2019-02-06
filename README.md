@@ -8,7 +8,7 @@ For a while now, links to the second edition of TRPL have shown a message saying
 However, there are two problems here:
 1. The (new) link that you are asked to open, just goes to the Foreword page each time, regardless of what page you were trying to view on the old book.
 
-_Update: Thanks to [rust-lang/book#1804](https://github.com/rust-lang/book/pull/1804) and [rust-lang/book#1803](https://github.com/rust-lang/book/pull/1803), this is no longer the case. The new links now point to the right page on the new book which partly mollifies the problem. You are welcome to use this extension if you cannot be bothered to perform one extra click every time.
+_Update: Thanks to [rust-lang/book#1804](https://github.com/rust-lang/book/pull/1804) and [rust-lang/book#1803](https://github.com/rust-lang/book/pull/1803), this is no longer the case. The new links now point to the right page on the new book which partly mollifies the problem. You are welcome to use this extension if you cannot be bothered to perform one extra click every time._
 
 2. Searching for a topic in the book, example Advanced Traits, always yields the outdated URL.
 
