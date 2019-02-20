@@ -14,5 +14,11 @@ module.exports = {
     "jsx",
     "json",
     "node"
+  ],
+  "collectCoverage": true,
+  "collectCoverageFrom": [
+    "**/*.ts",
+    "!src/index.ts",
+    "!**/node_modules/**",
   ]
 }
