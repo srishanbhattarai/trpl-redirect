@@ -1,4 +1,4 @@
-# trpl-redirect &middot; [![Build Status](https://travis-ci.com/srishanbhattarai/trpl-redirect.svg?token=r9ZKJZspyajhDz5EguyH&branch=master)](https://travis-ci.com/srishanbhattarai/trpl-redirect)
+# trpl-redirect &middot; [![Build Status](https://travis-ci.com/srishanbhattarai/trpl-redirect.svg?token=r9ZKJZspyajhDz5EguyH&branch=master)](https://travis-ci.com/srishanbhattarai/trpl-redirect) [![codecov](https://codecov.io/gh/srishanbhattarai/trpl-redirect/branch/master/graph/badge.svg)](https://codecov.io/gh/srishanbhattarai/trpl-redirect)
 > Browser extension to redirect outdated links to The Rust Programming Language book to the right URLs.
 
 ![Image of TRPL Redirect](https://github.com/srishanbhattarai/trpl-redirect/blob/master/screenshot.png)
