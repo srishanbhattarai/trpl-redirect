@@ -1,5 +1,4 @@
 import { findClosestNewURL } from './trpl'
-
 ;(() => {
   console.log('[TRPL]: LOADED!')
 
