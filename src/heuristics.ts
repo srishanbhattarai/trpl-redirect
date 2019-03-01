@@ -17,10 +17,7 @@ export const ngrams = (n: number, str: string): Set<string> => {
 
   let idx = 0
   while (idx < strlen - n + 1) {
-    const ngram = str.slice(idx, idx + n)
-    results.add(ngram)
-
-    idx += 1
+    results.add(str.slice(idx, idx++ + n))
   }
 
   return results
