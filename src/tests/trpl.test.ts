@@ -21,4 +21,10 @@ describe('findClosestNewURL', () => {
 
     expect(findClosestNewURL(old)).toEqual(newLink)
   })
+
+  it('should return the argument URL if it is not a recognized base URL', () => {
+    const old = 'https://github.com/srishanbhattarai/trpl-redirect'
+
+    expect(findClosestNewURL(old)).toEqual(old)
+  })
 })
