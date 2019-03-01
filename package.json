@@ -13,7 +13,6 @@
     "test": "jest"
   },
   "devDependencies": {
-    "@types/chrome": "^0.0.78",
     "@types/jest": "^23.3.13",
     "@types/node": "^10.12.21",
     "jest": "22.0.0",
